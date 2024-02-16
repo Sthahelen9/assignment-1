@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza Order Form</title>
+</head>
+<body>
+    
+
+    <!-- Main Section -->
+    <main>
+        <div class="container">
+        <form>
+            <!-- Personal Information Section -->
+            <header>
+                <img src="p.png" width="100%">
+                <h1>Pizza Order Form</h1>
+            </header>
+                <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </fieldset>
+        
+            <!-- Pizza Order Section -->
+            <fieldset>
+                <legend>Pizza Order</legend>
+                <label for="num_pizzas">Number of Pizzas:</label>
+                <input type="number" id="num_pizzas" name="num_pizzas" min="1" required><br>
+
+                <label for="pizza_size">Size:</label>
+                <select id="pizza_size" name="pizza_size" required>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br>
+
+                <label for="pizza_shape">Shape:</label>
+                <input type="radio" id="round" name="pizza_shape" value="round" checked>
+                <label for="round">Round</label>
+                <input type="radio" id="square" name="pizza_shape" value="square">
+                <label for="square">Square</label><br>
+
+                <label for="toppings">Toppings:</label>
+                <textarea id="toppings" name="toppings" rows="4" cols="50" placeholder="Enter toppings here"></textarea><br>
+
+                <label for="crust">Crust Type:</label>
+                <select id="crust" name="crust" required>
+                    <option value="deep-dish">Deep Dish</option>
+                    <option value="thin-crust">Thin Crust</option>
+                    <option value="regular">Regular</option>
+                </select><br>
+
+                <label for="delivery_method">Delivery Method:</label>
+                <input type="radio" id="takeout" name="delivery_method" value="takeout" checked>
+                <label for="takeout">Takeout</label>
+                <input type="radio" id="delivery" name="delivery_method" value="delivery">
+                <label for="delivery">Delivery</label>
+                <input type="radio" id="eat-in" name="delivery_method" value="eat-in">
+                <label for="eat-in">Eat-in</label><br>
+            </fieldset>
+        
+
+            <!-- Additional Information Section -->
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any special requests or comments"></textarea><br>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Place Order"><br>
+            <input type="reset" value="Reset Form"><br>
+        </form>
+
+        <!-- Pizza Illustration -->
+        <p>Enjoy our delicious pizzas!</p>
+        <img src="pizza.png" alt="Delicious Pizza">
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Mitho Pizza </p>
+    </footer>
+
+</body>
+</html>
